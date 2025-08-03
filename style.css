@@ -1,128 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; 
-    height: 139px;
-    position: relative; 
-    flex-direction: row;
-    background-color: #415FCE;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 139px;
+  position: relative;
+  flex-direction: row;
+  background-color: #415FCE;
+  margin-bottom: 40px;
 }
 
 .logoCamisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 110px;
-    height: 99px;
-    margin-left: 60px;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 110px;
+  height: 99px;
+  margin-left: 60px;
 }
 
 #logoCamisa {
-    width: 99px;
-    height: 88px;
-    display: block;
+  width: 99px;
+  height: 88px;
+  display: block;
 }
 
 #logoLobo {
-    position: absolute;
-    width: 25px;
-    height: 31px;
-    top: 36px;
-    left: 42px;
+  position: absolute;
+  width: 25px;
+  height: 31px;
+  top: 36px;
+  left: 42px;
 }
 
 header h1 {
-  
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 31px; 
-    font-size: 64px;
-    font-weight: bold;
-    margin: 0;
-    width: 378px;
-    height: 77px;
-    font-family: 'inter';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 31px;
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  width: 378px;
+  height: 77px;
+  font-family: 'inter';
 }
 
-.btnAdm button { 
-    padding: 10px 20px;
-    font-size: 16px;
-    width: 315px;
-    height: 60px;
-    top: 40px;
-    left: 1064px;
-    border-radius: 24px;
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    gap: 21px;
-    margin-right: 60px;
-    display: flex;
-    flex-direction: row;
-    background-color: #1F9B5F;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.btnAdm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 315px;
+  height: 60px;
+  top: 40px;
+  left: 1064px;
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  gap: 21px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: row;
+  background-color: #1F9B5F;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-.btnAdmContent{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    gap: 45px;
+.btnAdmContent {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
 }
 
 .btnAdm button:hover {
-    background-color: #1f8a4d; 
-    transform: scale(1.03);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #1f8a4d;
+  transform: scale(1.03);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-/*----------------------------------------------------------*/
 
 /* Main */
-main button{
-    width: 1310px;
-    height: 80px;
-    top: 203px;
-    left: 69px;
-    border-radius: 8px;
-    background-color: #1F9B5F;
-    color: #fff;
-    margin: 20px auto;
-    display: block;
-    cursor: pointer;
-    border: none;
+main button {
+  width: 1310px;
+  height: 80px;
+  top: 203px;
+  left: 69px;
+  border-radius: 8px;
+  background-color: #1F9B5F;
+  color: #fff;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  border: none;
 }
 
 .textButton {
-font-family: 'Inter', sans-serif;
-font-weight: 700;
-font-style: Bold;
-font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
 }
 
 main button:hover {
-    background-color: #1f8a4d; 
-    transform: scale(1.03);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #1f8a4d;
+  transform: scale(1.03);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .grade-produtos {
   display: grid;
-  grid-template-columns: repeat(3, 408px); 
+  grid-template-columns: repeat(3, 408px);
   gap: 24px;
   padding: 20px;
   margin: 0 auto;
@@ -145,8 +143,7 @@ main button:hover {
 }
 
 .info-produto {
-
-background-color: #243B98;
+  background-color: #243B98;
 }
 
 .card-produto img {
@@ -157,144 +154,175 @@ background-color: #243B98;
 }
 
 .card-produto h3 {
-    font-family: Inter;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 36px;
-    color: #8CBF26;
-    line-height: 100%;
-    letter-spacing: 5%;
-    text-align: left;
-    text-transform: uppercase;
-    padding: 5px 16px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  color: #8CBF26;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 5px 16px;
 }
 
 .card-produto p {
-    font-family: Inter;
-    font-weight: 500px;
-    font-style: Medium;
-    font-size: 14px;
-    text-align: center;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #fff;
+  font-family: Inter;
+  font-weight: 500px;
+  font-style: Medium;
+  font-size: 14px;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
 }
 
 .card-produto .preco {
-    font-family:inter;
-    font-weight: 700px;
-    font-style: Bold;
-    font-size: 35px;
-    text-align: end;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #8CBF26;
-    margin: 35px;
+  font-family: inter;
+  font-weight: 700px;
+  font-style: Bold;
+  font-size: 35px;
+  text-align: end;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #8CBF26;
+  margin: 35px;
 }
 
 .lixeira {
   width: 42px !important;
-  height: 42px! important;
+  height: 42px !important;
   cursor: pointer;
   transform: translateX(-100px);
   margin-top: 7px;
 }
 
-.btnEditar  {
-  width: 42px!important;
-  height: 42px!important;
+.btnEditar {
+  width: 42px !important;
+  height: 42px !important;
   cursor: pointer;
   transform: translateX(-50px);
   margin-top: 7px;
 }
+
 .imagem-produto {
   position: relative;
   width: 100%;
   height: 478px;
 }
+
 .imagem-produto a {
   position: absolute;
   z-index: 2;
 }
 
 .nota-produto {
-    position: absolute;
-    font-family: Inter;
-    font-weight: 600;
-    font-style: Semi Bold;
-    font-size: 36px;
-    line-height: 100%;
-    letter-spacing: 5%;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 8px 16px;
-
+  position: absolute;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  top: 0;
+  left: 0;
 }
 
-.star{
-    width: 33px !important;
-    height: 33px !important;
-    border-radius: 2px;
-    position: absolute;
-    margin: 8px 69px;
+.star {
+  width: 33px !important;
+  height: 33px !important;
+  border-radius: 2px;
+  position: absolute;
+  margin: 8px 69px;
 }
 
-/* ---- */
+/* Paginação */
+#paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
 
-/* footer */
+#paginacao button {
+  background-color: #1F9B5F;
+    width: 32px;
+    height: 32px;
+    
+    gap: 8px;
+    border-radius: 45%;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+
+  cursor: pointer;
+}
+
+#paginacao button:hover {
+  background-color: #1f8a4d;
+}
+
+#paginacao .ativa {
+  background-color: #0f7e47;
+}
+
+/* Footer */
 footer {
-    width: 100%;
-    height: 196px;
-    top: 3076px;
-    background-color: #FCF7F8;
+  width: 100%;
+  height: 196px;
+  top: 3076px;
+  background-color: #FCF7F8;
 }
 
 .footerContent {
-    width: 100%;
-    height: 158px;
-    top: 28px;
-    left: 69px;
-    justify-content: center;
-    display: flex;
-    padding: 30px;
-    align-items: flex-start;
-    gap: 1400px;
-    color: #4E8098;
+  width: 100%;
+  height: 158px;
+  top: 28px;
+  left: 69px;
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 1400px;
+  color: #4E8098;
 }
 
-footer h3{
-    padding: 5px;
+footer h3 {
+  padding: 5px;
 }
 
-.footerContact p{
-    padding-bottom: 13px; 
+.footerContact p {
+  padding-bottom: 13px;
 }
 
-#logoInsta img{
-    height: 25px;
-    width: 25px;
-    margin: 5px;
-    }
-
-#logoFace img{
-    width: 13.125px;
-    height: 25px;
-    margin: 5px;
+#logoInsta img {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
 }
 
-#logoL img{
-    width: 23.82px;
-    height: 22.5px;
-    margin: 5px;
+#logoFace img {
+  width: 13.125px;
+  height: 25px;
+  margin: 5px;
 }
 
-.subFooter{
-   background-color: #415FCE;    
-    width: 100%;
-    height: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
+#logoL img {
+  width: 23.82px;
+  height: 22.5px;
+  margin: 5px;
 }
-/*----------------------------------------------------------*/
+
+.subFooter {
+  background-color: #415FCE;
+  width: 100%;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
