@@ -13,6 +13,10 @@ async function carregarProdutos() {
 
      card.innerHTML = `
   <div class="imagem-produto">
+      
+  <span class="nota-produto">${produto.rating || '5.0'} </span>
+    <img src="Star 1.png" alt="" class="star">  
+    
     <img src="camisa.jpg" alt="${produto.name}">
 
     <a href="excluirProduto.html?id=${produto.id}">

@@ -217,6 +217,28 @@ background-color: #243B98;
   z-index: 2;
 }
 
+.nota-produto {
+    position: absolute;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 16px;
+
+}
+
+.star{
+    width: 33px !important;
+    height: 33px !important;
+    border-radius: 2px;
+    position: absolute;
+    margin: 8px 69px;
+}
+
 /* ---- */
 
 /* footer */
