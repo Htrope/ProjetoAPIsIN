@@ -4,9 +4,9 @@ let paginaAtual = 1;
 
 async function carregarProdutos() {
   try {
-    const resposta = await fetch('products.json');
+    const resposta = await fetch('http://localhost:3000/products');
     const data = await resposta.json();
-    produtos = data.products;
+    produtos = data;
 
     criarPaginacao();
     exibirProdutos(paginaAtual);
@@ -32,9 +32,7 @@ function exibirProdutos(pagina) {
         <span class="nota-produto">${produto.rating || '5.0'}</span>
         <img src="Star 1.png" alt="estrela" class="star">
         <img src="camisa.jpg" alt="${produto.name}">
-        <a href="excluirProduto.html?id=${produto.id}">
-          <img src="FrameLixeira.png" alt="Excluir" class="lixeira" />
-        </a>
+        <img src="FrameLixeira.png" alt="Excluir" class="lixeira" onclick="excluirProduto(${produto.id})" />
         <a href="estoque/estoque.html?id=${produto.id}">
           <img src="FrameLapis.png" alt="Editar" class="btnEditar" />
         </a>
@@ -62,7 +60,6 @@ function criarPaginacao() {
   paginacao.style.gap = '10px';
   paginacao.style.margin = '30px 0';
 
-  // Botão anterior
   const anterior = document.createElement('button');
   anterior.innerText = '<';
   anterior.onclick = () => {
@@ -74,7 +71,6 @@ function criarPaginacao() {
   };
   paginacao.appendChild(anterior);
 
-  // Botões numerados
   for (let i = 1; i <= totalPaginas; i++) {
     const botao = document.createElement('button');
     botao.innerText = i;
@@ -88,7 +84,6 @@ function criarPaginacao() {
     paginacao.appendChild(botao);
   }
 
-  // Botão próximo
   const proximo = document.createElement('button');
   proximo.innerText = '>';
   proximo.onclick = () => {
@@ -107,6 +102,27 @@ function atualizarEstiloBotoes() {
   document.querySelectorAll('.btn-pagina').forEach((btn, index) => {
     btn.classList.toggle('ativa', index + 1 === paginaAtual);
   });
+}
+
+async function excluirProduto(id) {
+  const confirmacao = confirm("Tem certeza que deseja excluir este produto?");
+  if (!confirmacao) return;
+
+  try {
+    const resposta = await fetch(`http://localhost:3000/products/${id}`, {
+      method: 'DELETE'
+    });
+
+    if (resposta.ok) {
+      alert("Produto excluído com sucesso!");
+      carregarProdutos(); 
+    } else {
+      alert("Erro ao excluir o produto.");
+    }
+  } catch (erro) {
+    console.error("Erro ao excluir produto:", erro);
+    alert("Erro ao excluir o produto.");
+  }
 }
 
 carregarProdutos();

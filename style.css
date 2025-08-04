@@ -196,16 +196,17 @@ main button:hover {
   width: 42px !important;
   height: 42px !important;
   cursor: pointer;
-  transform: translateX(-100px);
-  margin-top: 7px;
+  margin-left: 250px;
+  transform: translateY(-470px);
 }
 
 .btnEditar {
   width: 42px !important;
   height: 42px !important;
   cursor: pointer;
-  transform: translateX(-50px);
-  margin-top: 7px;
+  margin-left: 10px;
+  transform: translateY(-470px);
+
 }
 
 .imagem-produto {

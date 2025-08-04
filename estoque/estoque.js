@@ -32,6 +32,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.querySelector("form").addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    const precoValido = !isNaN(preco.value) && Number(preco.value) >= 0;
+    const avaliacaoValida = !isNaN(avaliacao.value) && Number(avaliacao.value) >= 0 && Number(avaliacao.value) <= 5;
+
+    if (!precoValido) {
+      alert("Preço inválido. Digite um número válido maior ou igual a 0.");
+      return;
+    }
+
+    if (!avaliacaoValida) {
+      alert("Nota inválida. Digite uma nota entre 0 e 5.");
+      return;
+    }
+
     const dadosAtualizados = {
       name: nome.value,
       price: parseFloat(preco.value),
@@ -39,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       category: categorias.value,
       description: descricao.value,
       rating: parseFloat(avaliacao.value),
-      inStock: true // ou false, se quiser permitir editar isso também
+      inStock: true
     };
 
     try {
@@ -51,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       if (resposta.ok) {
         alert("Produto atualizado com sucesso!");
-        window.location.href = "index.html"; // ou lista de produtos
+        window.location.href = "index.html";
       } else {
         throw new Error("Erro na atualização");
       }

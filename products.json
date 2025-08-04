@@ -1,54 +1,24 @@
 {
   "products": [
     {
-      "name": "carlinhos1",
-      "price": 34,
-      "image": "https://via.placeholder.com/150?text=Camisa+Flask",
-      "category": "Tecnologia",
-      "description": "Qualidade premium.",
-      "rating": 1,
-      "inStock": true,
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Camisa Angular",
-      "price": 34.05,
-      "image": "https://via.placeholder.com/150?text=Camisa+Angular",
-      "category": "Canecas",
-      "description": "Super leve e confortável.",
-      "inStock": true,
-      "rating": 3
-    },
-    {
-      "id": 3,
       "name": "Caneca PHP",
-      "price": 60.93,
+      "price": 60.9,
       "image": "https://via.placeholder.com/150?text=Caneca+PHP",
       "category": "Acessórios",
       "description": "Super leve e confortável.",
-      "inStock": false,
-      "rating": 3.8
+      "rating": 3.8,
+      "inStock": true,
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Camisa Next.js",
-      "price": 40.02,
-      "image": "https://via.placeholder.com/150?text=Camisa+Next.js",
-      "category": "Roupas",
-      "description": "Qualidade premium.",
-      "inStock": false,
-      "rating": 3.8
-    },
-    {
-      "id": 5,
       "name": "Camiseta Svelte",
-      "price": 28.27,
+      "price": 28.2,
       "image": "https://via.placeholder.com/150?text=Camiseta+Svelte",
       "category": "Acessórios",
       "description": "Qualidade premium.",
+      "rating": 3,
       "inStock": true,
-      "rating": 3.4
+      "id": 5
     },
     {
       "id": 6,
