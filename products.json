@@ -1,14 +1,14 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa Flask",
-      "price": 34.15,
+      "name": "carlinhos1",
+      "price": 34,
       "image": "https://via.placeholder.com/150?text=Camisa+Flask",
       "category": "Tecnologia",
       "description": "Qualidade premium.",
-      "inStock": false,
-      "rating": 5
+      "rating": 1,
+      "inStock": true,
+      "id": 1
     },
     {
       "id": 2,

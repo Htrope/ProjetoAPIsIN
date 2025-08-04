@@ -7,6 +7,7 @@ async function carregarProdutos() {
     const resposta = await fetch('products.json');
     const data = await resposta.json();
     produtos = data.products;
+
     criarPaginacao();
     exibirProdutos(paginaAtual);
   } catch (erro) {
@@ -25,15 +26,16 @@ function exibirProdutos(pagina) {
   paginaProdutos.forEach(produto => {
     const card = document.createElement('div');
     card.classList.add('card-produto');
+
     card.innerHTML = `
       <div class="imagem-produto">
-        <span class="nota-produto">${produto.rating || '5.0'} </span>
-        <img src="Star 1.png" alt="" class="star">  
+        <span class="nota-produto">${produto.rating || '5.0'}</span>
+        <img src="Star 1.png" alt="estrela" class="star">
         <img src="camisa.jpg" alt="${produto.name}">
         <a href="excluirProduto.html?id=${produto.id}">
           <img src="FrameLixeira.png" alt="Excluir" class="lixeira" />
         </a>
-        <a href="editarProduto.html?id=${produto.id}">
+        <a href="estoque/estoque.html?id=${produto.id}">
           <img src="FrameLapis.png" alt="Editar" class="btnEditar" />
         </a>
       </div>
@@ -43,6 +45,7 @@ function exibirProdutos(pagina) {
         <p class="preco">R$ ${Number(produto.price).toFixed(2)}</p>
       </div>
     `;
+
     container.appendChild(card);
   });
 }
@@ -59,6 +62,7 @@ function criarPaginacao() {
   paginacao.style.gap = '10px';
   paginacao.style.margin = '30px 0';
 
+  // Botão anterior
   const anterior = document.createElement('button');
   anterior.innerText = '<';
   anterior.onclick = () => {
@@ -70,6 +74,7 @@ function criarPaginacao() {
   };
   paginacao.appendChild(anterior);
 
+  // Botões numerados
   for (let i = 1; i <= totalPaginas; i++) {
     const botao = document.createElement('button');
     botao.innerText = i;
@@ -83,6 +88,7 @@ function criarPaginacao() {
     paginacao.appendChild(botao);
   }
 
+  // Botão próximo
   const proximo = document.createElement('button');
   proximo.innerText = '>';
   proximo.onclick = () => {

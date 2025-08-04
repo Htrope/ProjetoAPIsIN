@@ -8,14 +8,14 @@ document.querySelector("form").addEventListener("submit", async function (e) {
   const description = document.getElementById("descricao").value.trim();
   const rating = parseFloat(document.getElementById("avaliacao").value);
 
-  // Define um produto novo com o mesmo padrão do seu JSON
+  
   const novoProduto = {
     name,
     price,
     image,
     category,
     description,
-    inStock: true, // padrão: disponível
+    inStock: true, 
     rating
   };
 
@@ -30,8 +30,9 @@ document.querySelector("form").addEventListener("submit", async function (e) {
 
     if (resposta.ok) {
       alert("Produto adicionado com sucesso!");
-      window.location.href = "index.html"; // redireciona para a home
+      window.location.href = "index.html"; 
     } else {
+
       throw new Error("Erro ao adicionar o produto.");
     }
   } catch (erro) {
