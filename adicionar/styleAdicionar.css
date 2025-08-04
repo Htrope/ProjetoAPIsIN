@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 139px;
+  position: relative;
+  flex-direction: row;
+  background-color: #415FCE;
+  margin-bottom: 40px;
+}
+
+.logoCamisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 110px;
+  height: 99px;
+  margin-left: 60px;
+}
+
+#logoCamisa {
+  width: 99px;
+  height: 88px;
+  display: block;
+}
+
+#logoLobo {
+  position: absolute;
+  width: 25px;
+  height: 31px;
+  top: 36px;
+  left: 42px;
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 31px;
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  width: 378px;
+  height: 77px;
+  font-family: 'inter';
+}
+
+.btnAdm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 315px;
+  height: 60px;
+  top: 40px;
+  left: 1064px;
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  gap: 21px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: row;
+  background-color: #1F9B5F;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btnAdmContent {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.btnAdm button:hover {
+  background-color: #1f8a4d;
+  transform: scale(1.03);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* -------------------------------------------------*/
+/* Main Content */
+h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    text-align: center;
+}
+
+/* ---------- Main ---------- */
+main {
+  padding: 40px 0;
+  text-align: center;
+}
+
+main h1 {
+  font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 48px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: -0.2px;
+padding-bottom: 50px;
+}
+
+/* ---------- Formulário ---------- */
+.container {
+    background-color: #2C7CB4;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 1209px;
+    height: 493px;
+    top: 325px;
+    left: 123px;
+    margin-bottom: 100px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+    
+}
+
+
+form label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #EDEDED;
+  font-size: 16px;
+}
+
+
+
+form button {
+  grid-column: span 2;
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 12px;
+  background-color: #1F9B5F;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #188e53;
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 196px;
+  top: 3076px;
+  background-color: #FCF7F8;
+    
+}
+
+.footerContent {
+  width: 100%;
+  height: 158px;
+  top: 28px;
+  left: 69px;
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 1400px;
+  color: #4E8098;
+}
+
+footer h3 {
+  padding: 5px;
+}
+
+.footerContact p {
+  padding-bottom: 13px;
+}
+
+#logoInsta img {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+
+#logoFace img {
+  width: 13.125px;
+  height: 25px;
+  margin: 5px;
+}
+
+#logoL img {
+  width: 23.82px;
+  height: 22.5px;
+  margin: 5px;
+}
+
+.subFooter {
+  background-color: #415FCE;
+  width: 100%;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
