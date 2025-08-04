@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editar estoque</title>
+  <link rel="stylesheet" href="style.estoque.css" />
+</head>
+<body>
+  <header>
+    <div class="logoCamisa">
+      <img src="/Vector.png" alt="Logo da Roupinha" id="logoCamisa" />
+      <img src="/logo_lobo.png" alt="Logo Lobo" id="logoLobo" />
+    </div>
+    <h1>Roup{IN}nha</h1>
+    <div class="btnAdm">
+      <button>
+        <div class="btnAdmContent">
+          <img src="/VectorUsuario.png" alt="ícone de Usuario" />
+          <p>Modo Administrador</p>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Editar peça do estoque</h1>
+    <div class="container">
+      <form>
+        <div>
+          <label for="nome">Nome da peça</label>
+          <input type="text" id="nome" placeholder="Nome" required />
+        </div>
+
+        <div>
+          <label for="preco">Preço</label>
+          <input type="number" id="preco" placeholder="Preço" required />
+        </div>
+
+        <div>
+          <label for="image">Imagem (URL)</label>
+          <input type="url" id="image" placeholder="Link da imagem" required />
+        </div>
+
+        <div>
+          <label for="categorias">Categorias</label>
+          <input type="text" id="categorias" placeholder="Categorias" required />
+        </div>
+
+        <div class="descricao">
+          <label for="descricao">Descrição</label>
+          <input type="text" id="descricao" placeholder="Descrição da peça" required />
+        </div>
+
+        <div>
+          <label for="avaliacao">Avaliação</label>
+          <input type="number" id="avaliacao" placeholder="Avaliação" required />
+        </div>
+
+        <button type="submit">Criar peça</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerContent">
+      <div class="footerAdress">
+        <h3>Endereço</h3>
+        <p>
+          Av. Milton Tavares de Souza,<br />
+          s/n - Sala 115 B - Boa Viagem,<br />
+          Niterói - RJ <br />
+          CEP: 24210-315
+        </p>
+      </div>
+      <div class="footerContact">
+        <h3>Fale conosco</h3>
+        <p>contato@injunior.com.br</p>
+        <a href="#" id="logoInsta"><img src="/VectorInsta.png" alt="Logo instagram" /></a>
+        <a href="#" id="logoFace"><img src="/VectorFace.png" alt="Logo Facebook" /></a>
+        <a href="#" id="logoL"><img src="/VectorL.png" alt="Logo Linkedin" /></a>
+      </div>
+    </div>
+    <div class="subFooter">
+      <p>
+        &copy; Copyright 2025. IN Junior. todos os direitos reservados.
+        Niterói, Brasil
+      </p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
