@@ -103,13 +103,16 @@ main button {
   display: block;
   cursor: pointer;
   border: none;
+  
 }
 
-.textButton {
+.text  {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-style: Bold;
-  font-size: 40px;
+  font-size: 40px ;
+  text-align: center;
+  transform: translateY(-80px)
 }
 
 main button:hover {
